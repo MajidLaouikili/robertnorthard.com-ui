@@ -6,7 +6,7 @@
     "Robert Northard <robertnorthard@googlemail.com>"
   ],
   "description": "Dependencies for robertnorthard.com",
-	"main": "index.html",
+  "main": "index.html",
   "private": true,
   "license": "MIT",
   "dependencies": {
