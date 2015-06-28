@@ -4,5 +4,9 @@ app.config(function($routeProvider) {
 		.when('/',{
 			templateUrl: 'views/home.html',
 			controller: 'mainController'
+		})
+		.when('/about',{
+			templateUrl: 'views/about.html',
+			controller: 'aboutController'
 		});
 }); 
