@@ -1,0 +1,16 @@
+{
+  "name": "bower.json",
+  "homepage": "https://robertnorthard.com",
+  "authors": [
+    "Robert Northard <robertnorthard@googlemail.com>"
+  ],
+  "description": "Dependencies for robertnorthard.com",
+  "main": "index.html",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.1",
+    "angular-route": "~1.4.1"
+  }
+}
