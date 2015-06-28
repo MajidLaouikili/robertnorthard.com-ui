@@ -1,0 +1,22 @@
+{
+  "name": "packages.json",
+  "description": "Nodejs dependencies",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobertNorthard/robertnorthard.com.git"
+  },
+  "author": "Robert Northard, robertnorthard@googlemail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobertNorthard/robertnorthard.com/issues"
+  },
+  "homepage": "https://robertnorthard.com",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5"
+  }
+}
