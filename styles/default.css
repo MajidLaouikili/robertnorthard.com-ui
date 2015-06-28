@@ -1,0 +1,27 @@
+/*
+The deafult style sheet for robertnorthard.com
+*/
+
+body {
+  background-color: #eee;
+}
+
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+div#content{
+  margin: 0px auto;
+  position: relative;
+  margin-top: 25%;
+}
