@@ -1,7 +1,6 @@
 
 app.controller('mainController', function($scope){
 
-	$scope.message = 'Coming Soon!'
+	$scope.message = 'Hello, I\'m Robert!'
 
 });
-
