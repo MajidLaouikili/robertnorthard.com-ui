@@ -1,5 +1,5 @@
-
-# DS_Store is the name of a file in the Apple OS X operating system for storing custom attributes of a folder such as the position of icons or the choice of a background image.
-.DS_Store
-
 /node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components

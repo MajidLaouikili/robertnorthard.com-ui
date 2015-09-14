@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+<title>Home | robertnorthard.com</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-social/bootstrap-social.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/default.css">
+</script>
+<base href="/">
+</head>
+
+<body id = "wrapper" data-ng-controller="mainController">
+  
+  <!-- Main content and invjected views -->
+  <div id = "content" class="reveal-animation" data-ng-view>
+  
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+  
+  </div>
+ </div>
+ <!-- jquery -->
+ <script src="/bower_components/jquery/dist/jquery.min.js"></script> 
+
+ <!-- Bootstrap -->
+ <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <!-- Angular -->
+ <script src="/bower_components/angular/angular.min.js"></script>
+ <script src="/bower_components/angular-route/angular-route.min.js"></script>
+
+ <!-- Modules -->
+ <script src="scripts/app.modules.js"></script>
+
+ <!-- Routes -->
+ <script src="scripts/app.routes.js"></script>
+
+ <!-- Controllers -->
+ <script src="scripts/controllers/mainController.js"></script>
+ <script src="scripts/controllers/aboutController.js"></script>
+
+</body>
+</html>
