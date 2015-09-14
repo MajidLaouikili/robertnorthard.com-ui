@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('robertnorthardcomUiApp'));
+  beforeEach(module('app'));
 
   var AboutCtrl,
     scope;
@@ -11,7 +11,7 @@ describe('Controller: AboutCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    AboutCtrl = $controller('aboutCtrl', {
       $scope: scope
       // place here mocked dependencies
     });

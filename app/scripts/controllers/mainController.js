@@ -1,6 +1,7 @@
+'use strict';
 
 app.controller('mainController', function($scope){
 
-	$scope.message = 'Hello, I\'m Robert!'
+	$scope.message = 'Hello, I\'m Robert!';
 
 });
