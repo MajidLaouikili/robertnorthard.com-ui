@@ -12,7 +12,8 @@ app.config(function($routeProvider) {
 		})
 	    .when('/login',{
 			templateUrl: 'views/login.html',
-			controller: 'loginController'
+			controller: 'authController'
 		})
+
     .otherwise({redirectTo: '/'});
 }); 

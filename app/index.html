@@ -38,11 +38,11 @@
                     <li data-ng-if="authenticated">
                         <a href="/#/manage">MANAGE</a>
                     </li>
-                    <li>
+                    <li data-ng-if="!authenticated">
                         <a href="/#/login">LOGIN</a>
                     </li>
                     <li data-ng-if="authenticated">
-                        <a href="/#/logout">LOGOUT</a>
+                        <a ng-click="logout()">LOGOUT</a>
                     </li>
                 </ul>
             </div>
@@ -78,10 +78,11 @@
  <!-- Controllers -->
  <script src="scripts/controllers/mainController.js"></script>
  <script src="scripts/controllers/blogController.js"></script>
- <script src="scripts/controllers/loginController.js"></script>
+ <script src="scripts/controllers/authController.js"></script>
 
  <!-- Services -->
  <script src="scripts/services/blogService.js"></script>
+ <script src="scripts/services/authService.js"></script>
 
  <script src="resources/properties.js"></script>
 
