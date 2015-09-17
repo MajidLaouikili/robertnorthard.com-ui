@@ -27,17 +27,26 @@ h1 {
 
 .container {
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-right: 200px;
 }
 
 .content {
   background-color: white;
+  margin-top: 20px;
 }
 
 .navbar{
   background:transparent;
   border: none;
+}
+
+.page-header{
+  padding-top: 1%;
+}
+
+.page-header > h1 {
+  color:black;
 }
 
 div#content-home{
@@ -49,13 +58,15 @@ div#content-home{
 
 div.blog-posts{
   background-color: white;
+  color:black;
 }
 
 div.blog {
-  padding: 0 100px;
+  padding:0 5% 5% 5%;
+  background-color:white;
 }
 
 div.blog .panel{
   padding: 20px 0 20px 20px;
-
+  color:black;
 }
