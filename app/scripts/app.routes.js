@@ -10,5 +10,9 @@ app.config(function($routeProvider) {
 			templateUrl: 'views/blog.html',
 			controller: 'blogController'
 		})
+	    .when('/login',{
+			templateUrl: 'views/login.html',
+			controller: 'loginController'
+		})
     .otherwise({redirectTo: '/'});
 }); 

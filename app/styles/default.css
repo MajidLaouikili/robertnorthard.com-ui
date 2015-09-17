@@ -71,3 +71,45 @@ div.blog .panel{
   padding: 20px 0 20px 20px;
   color:black;
 }
+
+div.login{
+  margin: 0px auto;
+  position: relative;
+  margin-top: 20%;
+  text-align:center;
+}
+
+.form-control {
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    background: 0;
+    outline: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.bottom-border:focus {
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    box-shadow: none!important;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 0;
+}
+
+.bottom-border {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #FFFFFF;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.remember-me{
+  color:white;
+}
+
+button {
+  margin-top: 5px;
+  text-transform: uppercase;
+  width: 100%;
+}
