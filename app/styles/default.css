@@ -31,3 +31,14 @@ div#content{
   position: relative;
   margin-top: 25%;
 }
+
+.container {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-right: 200px;
+}
+
+.navbar{
+  background:transparent;
+  border: none;
+}
