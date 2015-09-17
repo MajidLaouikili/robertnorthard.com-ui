@@ -6,7 +6,7 @@
  * @description
  * # blogService
  */
-app.service("blogService", function($http){
+app.service("BlogService", function($http){
 
 	// Return blog post promise
 	this.getPosts = function(){

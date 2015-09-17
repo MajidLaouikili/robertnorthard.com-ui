@@ -7,25 +7,36 @@
  * # AuthService
  * AuthService for robertnorthard.com-ui.
  */
-app.service("authService", function($http, $rootScope){
-    this.authenticate = function(credentials, callback){
+app.service("AuthService", function($http) {
 
-            var payload = {
-                username: credentials.username,
-                password: credentials.password
-            };
+    var user;
 
-            $http.put(properties.api + '/auth', payload).success(function(data) {
+    this.authenticate = function(credentials, callback) {
+        $http.put(properties.api + '/auth', {
+            username: credentials.username,
+            password: credentials.password
+        })
+        .success(function(response) {
+            callback(response);
+        })
+        .error(function(error) {
+            callback(error);
+        });
+    };
 
-                if (data.username) {
-                    $rootScope.authenticated = true;
-                } else {
-                    $rootScope.authenticated = false;
-                }
-                callback();
-            }).error(function() {
-                $rootScope.authenticated = false;
-                callback();
-            }); 
+    this.isLoggedIn = function(){
+        return user ? true : false;
+    };
+
+    this.getUser = function (){
+        return user; 
+    };
+
+    this.logout = function(){
+        user = undefined;
+    };
+
+    this.setUser = function(userObj){
+        user = userObj;
     };
 });

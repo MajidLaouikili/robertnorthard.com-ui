@@ -1,23 +1,24 @@
 'use strict';
 
-app.controller('authController', function($scope, authService, $rootScope, $location, $window){
+app.controller('authController', function($scope, AuthService, $rootScope, $location, $window){
 
-    $scope.credentials = {};
+    $scope.login = function() {
+        AuthService.authenticate($scope.credentials, function(user) {
 
-    $rootScope.login = function() {
-        authService.authenticate($scope.credentials, function() {
-            if ($rootScope.authenticated) {
+            if (user) {
+                // Login succedded
+                AuthService.setUser(user);
                 $scope.error = false;
                 $location.path('/');
             } else {
+                // Login failed
                 $scope.error = true;
             }
         });
     };
 
 	$rootScope.logout = function() {
-		delete $window.sessionStorage.token;
-		$rootScope.authenticated = false;
+		AuthService.logout();
 	    $location.path("/");
 	};
 });

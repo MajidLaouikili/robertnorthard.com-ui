@@ -13,7 +13,7 @@
 <base href="/">
 </head>
 
-<body id = "wrapper" data-ng-controller="mainController">
+<body id = "wrapper">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-top" role="navigation">
@@ -35,13 +35,13 @@
                     <li>
                         <a href="/#/about">ABOUT</a>
                     </li>
-                    <li data-ng-if="authenticated">
+                    <li data-ng-if="isLoggedIn">
                         <a href="/#/manage">MANAGE</a>
                     </li>
-                    <li data-ng-if="!authenticated">
+                    <li data-ng-if="!isLoggedIn">
                         <a href="/#/login">LOGIN</a>
                     </li>
-                    <li data-ng-if="authenticated">
+                    <li data-ng-if="isLoggedIn">
                         <a ng-click="logout()">LOGOUT</a>
                     </li>
                 </ul>
@@ -81,11 +81,11 @@
  <script src="scripts/controllers/authController.js"></script>
 
  <!-- Services -->
- <script src="scripts/services/blogService.js"></script>
- <script src="scripts/services/authService.js"></script>
+ <script src="scripts/services/BlogService.js"></script>
+ <script src="scripts/services/AuthService.js"></script>
 
   <!-- Services -->
- <script src="scripts/interceptors/authInterceptor.js"></script>
+ <script src="scripts/interceptors/AuthInterceptor.js"></script>
 
  <script src="resources/properties.js"></script>
 
