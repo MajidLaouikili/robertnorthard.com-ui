@@ -15,7 +15,6 @@ body, h1, p {
   font-weight: normal;
   margin: 0;
   padding: 0;
-  text-align: center;
   background-color: transparent;
 }
 
@@ -26,19 +25,37 @@ h1 {
   margin: 0 0 20px 0;
 }
 
-div#content{
-  margin: 0px auto;
-  position: relative;
-  margin-top: 25%;
-}
-
 .container {
   font-weight: bold;
   margin-top: 30px;
   margin-right: 200px;
 }
 
+.content {
+  background-color: white;
+}
+
 .navbar{
   background:transparent;
   border: none;
+}
+
+div#content-home{
+  margin: 0px auto;
+  position: relative;
+  margin-top: 25%;
+  text-align:center;
+}
+
+div.blog-posts{
+  background-color: white;
+}
+
+div.blog {
+  padding: 100px;
+}
+
+div.blog .panel{
+  padding: 20px 0 20px 20px;
+
 }
