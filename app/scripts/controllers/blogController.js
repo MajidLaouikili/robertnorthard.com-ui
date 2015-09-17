@@ -1,7 +1,10 @@
 'use strict';
 
-app.controller('blogController', function($scope){
+app.controller('blogController', function($scope, blogService){
 
-	$scope.message = 'Blog page...';
+	$scope.message = 'Blog';
 
+	blogService.getPosts().success(function(data){
+		$scope.posts = data;
+	});
 });
