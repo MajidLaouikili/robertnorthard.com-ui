@@ -18,6 +18,10 @@ body, h1, p {
   background-color: transparent;
 }
 
+p{
+  margin-top: 10px;
+}
+
 /* Don't partially render page, this is changed to block when the page is fully rendered */ 
 .ng-cloak {
   display: none !important;

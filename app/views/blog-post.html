@@ -3,14 +3,12 @@
    <div class="page-header">
       <h3>{{ message }}</h3>
    </div>
-   <!--Body content-->
-   <div ng-if="!error">
-   <h4><a href = "{{ '/#/blog/post/' + post.id }}" > {{ post.title }} </a></h4>
-   <sub> by {{ post.author.username }} </sub>
-   <hr>
-   <p> {{ post.body }} </p>
-   <hr>
-   <sub><span class ="glyphicon glyphicon-time"></span> Posted on {{post.timestamp | date:'MM/dd/yyyy'}}</sub>
+   <div>
+      <!--Body content-->
+      <h2><a href = "{{ '/#/blog/post/' + post.id }}" > {{ post.title }} </a></h2>
+      <sub> by {{ post.author.username }} on <span class ="glyphicon glyphicon-time"></span> {{post.timestamp | date:'MM/dd/yyyy HH:MM:ss'}}</sub>
+      <hr>
+      <p ng-bind-html="post.body"></p>
+      <hr>
    </div>
-   {{ error }}
 </div>
