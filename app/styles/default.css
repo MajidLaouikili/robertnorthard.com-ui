@@ -40,6 +40,12 @@ h1 {
   margin-right: 200px;
 }
 
+div#content{
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
 .content {
   background-color: white;
   margin-top: 20px;
@@ -49,6 +55,7 @@ h1 {
   background:transparent;
   border: none;
   margin-bottom: 0;
+  broder-bottom: 1px solid black;
 }
 
 .page-header{
