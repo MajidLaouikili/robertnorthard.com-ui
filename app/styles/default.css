@@ -18,6 +18,11 @@ body, h1, p {
   background-color: transparent;
 }
 
+/* Don't partially render page, this is changed to block when the page is fully rendered */ 
+.ng-cloak {
+  display: none !important;
+}
+
 h1 {
   font-size: 48px;
   font-weight: 300;

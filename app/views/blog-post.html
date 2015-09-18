@@ -1,0 +1,13 @@
+<!-- blog-post.html !-->
+<div class = 'blog'>
+   <div class="page-header">
+      <h3>{{ message }}</h3>
+   </div>
+   <!--Body content-->
+   <h4><a href = "{{ '/#/blog/post/' + post.id }}" > {{ post.title }} </a></h4>
+   <sub> by {{ post.author.username }} </sub>
+   <hr>
+   <p> {{ post.body }} </p>
+   <hr>
+   <sub><span class ="glyphicon glyphicon-time"></span> Posted on {{post.timestamp | date:'MM/dd/yyyy'}}</sub>
+</div>

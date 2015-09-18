@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('blogController', function($scope, BlogService){
+app.controller('blogListController', function($scope, BlogService){
 
 	$scope.message = 'Blog';
 
