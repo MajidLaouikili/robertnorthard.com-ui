@@ -5,9 +5,9 @@ app.controller('authController', function($scope, AuthService, $rootScope, $loca
     $scope.login = function() {
         AuthService.authenticate($scope.credentials, function(user) {
 
-            if (user) {
+            if (user.data) {
                 // Login succedded
-                AuthService.setUser(user);
+                AuthService.setUser(user.data);
                 $scope.error = false;
                 $location.path('/');
             } else {
