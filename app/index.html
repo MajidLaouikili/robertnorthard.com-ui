@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+  <head>
+    <title>Home | robertnorthard.com</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to robertnorthard.com">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-social/bootstrap-social.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    </script>
+    <base href="/">
+  </head>
+  <body data-ng-cloak>
+    <div class = "wrapper">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="/#/">HOME</a>
+              </li>
+              <li>
+                <a href="/#/blog">BLOG</a>
+              </li>
+              <li data-ng-if="aboutFeature">
+                <a href="/#/about">ABOUT</a>
+              </li>
+              <li data-ng-if="isLoggedIn">
+                <a href="/#/manage">MANAGE</a>
+              </li>
+              <li data-ng-if="!isLoggedIn">
+                <a href="/#/login">LOGIN</a>
+              </li>
+              <li data-ng-if="isLoggedIn">
+                <a ng-click="logout()">LOGOUT</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+
+      <!-- Main content and injected views -->
+      <div id = "content" class="reveal-animation" data-ng-view>
+        
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        
+      </div>
+    </div>
+    
+    <!-- jquery -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- Modules -->
+    <script src="scripts/app.modules.js"></script>
+
+    <!-- Routes -->
+    <script src="scripts/app.routes.js"></script>
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/mainController.js"></script>
+    <script src="scripts/controllers/blogListController.js"></script>
+    <script src="scripts/controllers/blogViewController.js"></script>
+    <script src="scripts/controllers/authController.js"></script>
+    <script src="scripts/controllers/manageController.js"></script>
+
+    <!-- Services -->
+    <script src="scripts/services/BlogService.js"></script>
+    <script src="scripts/services/AuthService.js"></script>
+
+    <!-- Services -->
+    <script src="scripts/interceptors/AuthInterceptor.js"></script>
+    <script src="resources/properties.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+/*
+The deafult style sheet for robertnorthard.com
+*/
+
+html {
+  background: url(/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+p{
+  margin-top: 10px;
+}
+
+/* Don't partially render page, this is changed to block when the page is fully rendered */ 
+.ng-cloak {
+  display: none !important;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  color:white;
+  margin: 0 0 20px 0;
+}
+
+.container {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 200px;
+}
+
+div#content{
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
+.content {
+  background-color: white;
+  margin-top: 20px;
+}
+
+.navbar{
+  background:transparent;
+  border: none;
+  margin-bottom: 0;
+  broder-bottom: 1px solid black;
+}
+
+.page-header{
+  padding-top: 2px;
+  margin: 0px;
+}
+
+.page-header > h1 {
+  color:black;
+}
+
+div#content-center{
+  margin: 0px auto;
+  position: relative;
+  margin-top: 25%;
+  text-align:center;
+}
+
+div.blog-posts{
+  background-color: white;
+  color:black;
+}
+
+div.blog {
+  padding:0 5% 5% 5%;
+  background-color:white;
+}
+
+div.blog .panel{
+  padding: 20px 0 20px 20px;
+  color:black;
+}
+
+div.login{
+  margin: 0px auto;
+  position: relative;
+  margin-top: 20%;
+  text-align:center;
+}
+
+.form-control {
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    background: 0;
+    outline: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.bottom-border:focus {
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    box-shadow: none!important;
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 0;
+}
+
+.bottom-border {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #FFFFFF;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.remember-me{
+  color:white;
+}
+
+button.login{
+  text-transform: uppercase;
+  width: 100%;
+}
+
+button {
+  margin-top: 5px;
+}
+
+.panel{
+  margin-top: 10px;
+}
+
+.manage{
+  width:800px;
+  margin:0 auto;
+}
