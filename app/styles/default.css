@@ -113,8 +113,20 @@ div.login{
   color:white;
 }
 
-button {
-  margin-top: 5px;
+button.login{
   text-transform: uppercase;
   width: 100%;
+}
+
+button {
+  margin-top: 5px;
+}
+
+.panel{
+  margin-top: 10px;
+}
+
+.manage{
+  width:800px;
+  margin:0 auto;
 }

@@ -1,1 +1,52 @@
-Manage Page
+<div class="manage">
+	<div class="page-header">
+		<h1>{{ message }}</h1>
+	</div>
+	<p>
+		<button type="button" class="btn btn-success">New Post</button>
+		<p>
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading">Manage Blog</div>
+				<!-- Table -->
+				<table class="table">
+					<tr>
+						<th>id</th>
+						<th>title</th>
+						<th>author</th>
+						<th>timestamp</th>
+						<th>action</th>
+					</tr>
+					<tr ng-repeat="post in posts">
+						<td><a href = "{{ '/#/blog/post/' + post.id }}" > {{ post.id }} </a></td>
+						<td>{{ post.title }}</td>
+						<td>{{ post.author.username }}</td>
+						<td>{{ post.timestamp | date:'MM/dd/yyyy' }}</td>
+						<td>
+							<button type="button" class="btn btn-success">Edit</button>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+							Delete
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title" id="myModalLabel">Delete Post</h4>
+										</div>
+										<div class="modal-body">
+											Are you sure you want to delete {{ post.id }}?
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="delete(post.id)">Delete</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
