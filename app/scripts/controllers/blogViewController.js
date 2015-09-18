@@ -6,5 +6,7 @@ app.controller('blogViewController', function($routeParams, $scope, BlogService)
     	
 	BlogService.findById($routeParams.id).success(function(data){
 		$scope.post = data;
+	}).error(function(){
+		$scope.error = "Blog post not found, " + $routeParams.id
 	});
 });
