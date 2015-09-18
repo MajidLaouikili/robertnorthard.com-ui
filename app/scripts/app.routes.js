@@ -22,6 +22,9 @@ app.config(function($routeProvider) {
 			templateUrl: 'views/login.html',
 			controller: 'authController'
 		})
+	    .when('/404',{
+			templateUrl: '404.html',
+		})
 
-    .otherwise({redirectTo: '/'});
+    .otherwise({redirectTo: '/404'});
 }); 
