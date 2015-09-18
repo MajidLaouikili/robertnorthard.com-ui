@@ -48,6 +48,7 @@ h1 {
 .navbar{
   background:transparent;
   border: none;
+  margin-bottom: 0;
 }
 
 .page-header{
