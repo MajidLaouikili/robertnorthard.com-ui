@@ -1,6 +1,6 @@
 'use strict';
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $httpProvider) {
 	$routeProvider
 		.when('/',{
 			templateUrl: 'views/home.html',
@@ -25,6 +25,7 @@ app.config(function($routeProvider) {
 	    .when('/404',{
 			templateUrl: '404.html',
 		})
-
     .otherwise({redirectTo: '/404'});
+
+     $httpProvider.interceptors.push('AuthInterceptor');
 }); 

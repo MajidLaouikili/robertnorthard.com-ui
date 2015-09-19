@@ -9,6 +9,7 @@ app.controller('authController', function($scope, AuthService, $rootScope, $loca
                 // Login succedded
                 AuthService.setUser(user.data);
                 $scope.error = false;
+                $window.sessionStorage.token =  btoa($scope.credentials.username + ":" + $scope.credentials.password);
                 $location.path('/');
             } else {
                 // Login failed
@@ -19,6 +20,7 @@ app.controller('authController', function($scope, AuthService, $rootScope, $loca
 
 	$rootScope.logout = function() {
 		AuthService.logout();
+        delete $window.sessionStorage.token;
 	    $location.path("/");
 	};
 });
