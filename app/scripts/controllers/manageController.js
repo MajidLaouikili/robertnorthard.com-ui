@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('manageController', function($scope, $route, $rootScope, $timeout, BlogService) {
+app.controller('manageController', function($scope, $location, $route, $rootScope, $timeout, BlogService) {
 
     $scope.message = 'Manage Blog Posts';
 
