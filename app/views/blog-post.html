@@ -5,10 +5,10 @@
    </div>
    <div>
       <!--Body content-->
-      <h2><a href = "{{ '/#/blog/post/' + post.id }}" > {{ post.title }} </a></h2>
+      <h2><a data-ng-model="post.title" href = "{{ '/#/blog/post/' + post.id }}" > {{ post.title }} </a></h2>
       <sub> by {{ post.author.displayName }} on <span class ="glyphicon glyphicon-time"></span> {{post.timestamp | date:'MM/dd/yyyy HH:MM:ss'}}</sub>
       <hr>
-      <p ng-bind-html="post.body"></p>
+      <p data-ng-model="post.body" ng-bind-html="post.body"></p>
       <hr>
    </div>
 </div>

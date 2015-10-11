@@ -7,6 +7,6 @@ app.controller('mainController', function($scope, $rootScope, AuthService){
     	$rootScope.isLoggedIn = isLoggedIn;
   	});
 
-	$scope.message = 'Hello, I\'m Robert!';
+	$scope.message = 'ROBERT NORTHARD';
 
 });
