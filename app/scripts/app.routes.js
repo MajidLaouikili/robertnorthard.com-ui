@@ -21,6 +21,10 @@ app.config(function($routeProvider, $httpProvider) {
 			templateUrl: 'views/manage.html',
 			controller: 'manageController',
 		})
+		.when('/services',{
+			templateUrl: 'views/services.html',
+			controller: 'servicesController',
+		})
 	    .when('/login',{
 			templateUrl: 'views/login.html',
 			controller: 'authController'
