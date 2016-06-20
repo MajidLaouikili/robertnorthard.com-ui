@@ -7,12 +7,15 @@ app.config(function($routeProvider, $httpProvider) {
 			controller: 'mainController'
 		})
 		.when('/blog/post/:id',{
-			templateUrl: 'views/blog-post.html',
-			controller: 'blogViewController'
+			templateUrl: 'views/blog.html',
+			controller: 'blogController'
 		})
 		.when('/blog',{
 			templateUrl: 'views/blog.html',
-			controller: 'blogListController'
+			controller: 'blogController'
+		})
+		.when('/blog/new',{
+			templateUrl: 'views/new-blog-post.html'
 		})
 		.when('/manage',{
 			templateUrl: 'views/manage.html',

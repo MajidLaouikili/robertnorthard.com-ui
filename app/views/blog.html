@@ -3,7 +3,7 @@
    <div class="page-header">
       <h3>{{ message }}</h3>
    </div>
-   <div data-ng-repeat="post in posts | filter:query">
+   <div data-ng-repeat="post in posts">
       <!--Body content-->
       <h2><a href = "{{ '/#/blog/post/' + post.id }}" > {{ post.title }} </a></h2>
       <sub> by {{ post.author.displayName }} on <span class ="glyphicon glyphicon-time"></span> {{post.timestamp | date:'MM/dd/yyyy HH:MM:ss'}}</sub>
